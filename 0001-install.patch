@@ -1,0 +1,28 @@
+From 927f745489b51ad64032bb1a9c0ed44bf8722f56 Mon Sep 17 00:00:00 2001
+From: wjyrich <1071633242@qq.com>
+Date: Sat, 14 Sep 2024 14:05:36 +0800
+Subject: [PATCH] install
+
+---
+ src/AniLibria.pro | 7 +++++++
+ 1 file changed, 7 insertions(+)
+
+diff --git a/src/AniLibria.pro b/src/AniLibria.pro
+index 3b192a3..03f1716 100644
+--- a/src/AniLibria.pro
++++ b/src/AniLibria.pro
+@@ -410,3 +410,10 @@ HEADERS += \
+     Classes/customstyle.h \
+     globalconstants.h \
+     globalhelpers.h
++
++target.path = $$PREFIX/bin
++
++icons.path = $$PREFIX/share/icons/hicolor/apps/
++icons.files = icons/*
++
++INSTALLS += target  icons
+\ No newline at end of file
+-- 
+2.43.4
+
